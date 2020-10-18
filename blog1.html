@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>About Us</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">iCoder</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home Page <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="back">
+            <a class="btn btn-success" role="button" href="/index.html">Home Page</a>
+        </div>
+    </nav>
+    <div class="container my-4">
+        <div>
+            <div>
+                <h2 class="featurette-heading">Coding Tips for Beginners<span class="text-muted"> Thank me later.</span>
+                </h2>
+                <p class="lead"><b>Writing code</b> can sometimes be the most difficult part of any software development
+                    process. If you don’t organize everything from the start – especially for big projects — the coding
+                    processes and code management afterwards may end up not just time consuming, but also a big
+                    headache.
+                    <br>
+                    Good code is maintainable, reusable, and testable. The following tips address how you and/or your
+                    development team can handle various coding tasks and how to keep everything as neat as possible. I
+                    will introduce you to some “best practices” that will help you write better code and help make you
+                    and your team happy and efficient.
+                    <br>
+                <h3>1. Use a Coding Standard</h3>
+                <p class="lead"> It’s easy to write bad, unorganized code, but it’s hard to maintain such code. Good
+                    code typically follows some standard for naming conventions, formatting, etc. Such standards are
+                    nice because they make things deterministic to those who read your code afterwards, including
+                    yourself.</p>
+                <br>
+                <p class="lead"> You can create your own coding standard, but it’s better to stick to one with
+                    wider-acceptance. Publicly maintained standards like Zend Framework Coding Standard or soon to be
+                    PSR-1 Coding Style Guide instead, it will be easier for others to adapt.</p>
+                <br>
+                <h3>2. Write Useful Comments</h3>
+                <p class="lead">Comments are crucial. You won’t appreciate them until you leave your thousand-line
+                    script for a couple of days and return to and try and make sense of it. Useful comments make life
+                    easier for yourself and those after you who have to maintain your code.</p>
+                <br>
+                <p class="lead">Write meaningful, single line comments for vague lines; write full parameter and
+                    functionality descriptions for functions and methods; for tricky logic blocks, describe the logic in
+                    words before it if necessary. And don’t forget, always keep your comments up to date!</p>
+                <br>
+                <h3>3. Refactor</h3>
+                <p class="lead"> Code refactoring is the eighth habit of highly effective developers. Believe it or not,
+                    you should be refactoring your code on a daily bases or your code is not in good health! Refactoring
+                    keeps your code healthy, but what should you refactor and how?</p>
+
+                <br>
+                <p class="lead"> If your function or method is more than 20-25 lines, it’s more likely that you are
+                    including too much logic inside it, and you can probably split it into two or more smaller
+                    functions/methods.
+                    If your method/function name is more than 20 characters, you should either rethink the name, or
+                    rethink the whole function/method by reviewing the first rule.</p>
+                <br>
+                <p class="lead">If you have a lot of nested loops then you may be doing some resource-intensive
+                    processing without realizing it. In general, you should rethink the logic if you are nesting more
+                    than 2 loops. Three nested loops is just horrible!
+                    Consider if there are any applicable design patterns your code can follow. You shouldn’t use
+                    patterns just for the sake of using patterns, but patterns offer tried-and-true ready-thought
+                    solutions that could be applicable.</p>
+                <br>
+                <h3>4. Avoid Global Code</h3>
+                <p class="lead"> Global variables and loops are a mess and can prove problematic when your application
+                    grows to millions of lines of code (which most do!). They may influence code elsewhere that is
+                    difficult to discern, or cause noisy naming clashes. Think twice before you pollute the global
+                    namespace with variables, functions, loops, etc.</p>
+                <br>
+                <p class="lead">In an ideal case, you should have no blocks defined globally. That is. all switch
+                    statements, try-catch, foreach, while-loops, etc. should be written inside a method or a function.
+                    Methods should be written inside class definitions, and class and function definitions should be
+                    within namespaces.</p>
+                <br>
+                <h3>5. Use Meaningful Names</h3>
+                <p class="lead">Never use names like $k, $m, and $test for your variables. How do expect to read such
+                    code in the future? Good code should be meaningful in terms of variable names, function/method
+                    names, and class names. Some good examples of meaningful names are: $request, $dbResult, and
+                    $tempFile (depending on your coding style guidelines these may use underscores, camelCase, or
+                    PascalCase).</p>
+                <br>
+                <h3>6. Use Meaningful Structures</h3>
+                <p class="lead"> Structuring your application is very important; don’t use complicated structures,
+                    always stick to simplicity. When naming directories and files, use a naming convention you agree
+                    upon with your team, or use one associated with your coding standard. Always split the four parts of
+                    any typical PHP application apart from each other – CSS, HTML Templates/Layouts, JavaScript, PHP
+                    Code – and for each try to split libraries from business logic. It’s also a good idea to keep your
+                    directory hierarchy as shallow as possible so it’s easier to navigate and find the code you’re
+                    looking for.</p>
+                <br>
+                <h3>7. Use Version Control Software</h3>
+                <p class="lead">In the old days, good development teams relied on CVS and diff patches for version
+                    control. Nowadays, though, we have a variety of solutions available. Managing changes and revisions
+                    should be easy but effective, so pick whatever version control software that will work best with the
+                    workflow of your development team. I prefer using a distributed version control tool like Git or
+                    Mercurial; both are free software/open source and very powerful.</p>
+                <br>
+                <h3>8. Use Automated Build Tools</h3>
+                <p class="lead"> Try to use tools like Ant or Phing to get your source prepared, compressed, and
+                    deployed. Building your whole application with a single command is a marvelous way to prevent errors
+                    and omissions that are inherent when performing repetitive tasks, and is a generally core
+                    pre-requisite for automated testing strategies. I recommend using Phing, it’s a well-supported build
+                    tool for PHP written to mimic Ant; if you aren’t familiar with it, check out Shammer C’s article
+                    Using Phing, the PHP Build Tool and Vito Tardia’s article Deploy and Release Your Application with
+                    Phing.</p>
+                <br>
+                <h3>9. Use Code Documenters</h3>
+                <p class="lead"> For large applications spanning several classes and namespaces, you should have
+                    automatically generated API documentation. This is very useful and keeps the development team aware
+                    of “what’s what.” And if you work on several projects at the same time, you will find such
+                    documentation a blessing since you may forget about structures switching back and forth between
+                    projects. One such documenter you might consider using is DocBlox.</p>
+                <br>
+                <h3>10. Use a Testing Framework</h3>
+                <p class="lead"> There are a plenty of tools that I really appreciate, but by far the ones I appreciate
+                    the most are the frameworks that help automate the testing process. Testing (particularly systematic
+                    testing) is crucial to every piece of your million dollar application. Good testing tools are
+                    PHPUnit and SimpleTest for unit testing your PHP Classes. For GUI testing, I recommend SeleniumHQ
+                    tools.</p>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    <footer class="container">
+        <p>© 2019 -2020 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
